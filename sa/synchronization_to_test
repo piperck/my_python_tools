@@ -1,0 +1,3 @@
+#!/bin/sh
+rsync -avz --rsh="ssh -p20322" --progress --exclude .git /Users/piperck/Desktop/chufang/xiachufang/  piperck@amazon.xiachufang.com:/home/piperck/project/xcf/
+
