@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+ssh -i ~/Desktop/aws-tokyo-mc.pem -N -L2046:localhost:2046 ubuntu@52.196.181.86
