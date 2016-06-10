@@ -5,7 +5,8 @@ import struct
 from ctypes import *
 
 # 监听的主机IP
-host = "192.168.1.100"
+host = "192.168.1.110"
+# host = "127.0.0.1"
 
 
 # IP头定义
@@ -46,7 +47,7 @@ class IP(Structure):
 if os.name == "nt":
     socket_protocol = socket.IPPROTO_IP
 else:
-    socket_protocol = socket.IPPROTO_ICMP
+    socket_protocol = socket.IPPROTO_IP
 
 sniffer = socket.socket(socket.AF_INET, socket.SOCK_RAW, socket_protocol)
 
