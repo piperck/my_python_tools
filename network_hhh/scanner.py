@@ -7,7 +7,7 @@ from netaddr import IPNetwork, IPAddress
 from ctypes import *
 
 # 监听的主机IP
-host = "192.168.1.100"
+host = "192.168.1.110"
 
 # 扫描目标子网
 subnet = "192.168.1.0/24"
@@ -105,7 +105,7 @@ try:
 
                     # confirm ICMP data included in our magic_message
                     if raw_buffer[len(raw_buffer)-len(magic_message):] == magic_message:
-                        print "Host down: %s" % ip_header.src_address
+                        print "Host up: %s" % ip_header.src_address
 
 except KeyboardInterrupt:
     pass
